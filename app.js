@@ -65,7 +65,7 @@ app.post("/uploadImage", async (req, res) => {
 })
 
 
-mongoose.connect(process.env.DATABASE_URL,{ useNewUrlParser: true, useUnifiedTopology: true} ,
+mongoose.connect('mongodb+srv://Simritha_Reddy_k04:simritha123@cluster0.ppxra6j.mongodb.net/?retryWrites=true&w=majority',{ useNewUrlParser: true, useUnifiedTopology: true} ,
     () => {
       console.log("connected to DB");
     }
