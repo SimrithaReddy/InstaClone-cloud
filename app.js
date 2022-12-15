@@ -28,7 +28,7 @@ app.use(fileUpload({ useTempFiles: true }))
 
 app.get("/",async(req,res)=>{
     try{
-        let userPosts = await InstaPost.find();
+        let userPosts = await InstaPost.find().sort({ _id: "-1" });;
         res.json(userPosts)
     }catch(e){
         res.json(e.message)
