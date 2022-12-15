@@ -36,7 +36,7 @@ app.get("/",async(req,res)=>{
 })
 
 
-app.post("/uploadImage", async (req, res) => {
+app.post("/uploads", async (req, res) => {
     
     try {
         const file = req.files.PostImage
